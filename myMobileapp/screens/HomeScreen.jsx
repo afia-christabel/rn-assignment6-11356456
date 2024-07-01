@@ -4,11 +4,11 @@
     import AsyncStorage from '@react-native-async-storage/async-storage';
 
     const products = [
-    { id: '1', name: 'Office Wear', description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress1.png') },
-    { id: '2', name: 'Black',  description: 'Reversible Angora Cardigan', price: 170, image: require('../assets/dress2.png') },
-    { id: '3', name: 'Church Wear',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress3.png') },
+    { id: '1', name: 'Office Wear', description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress4.png') },
+    { id: '2', name: 'Black',  description: 'Reversible Angora Cardigan', price: 170, image: require('../assets/dress1.png') },
+    { id: '3', name: 'Church Wear',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress2.png') },
     { id: '4', name: 'Lamerei',  description: 'Reversible Angora Cardigan ', price: 120, image: require('../assets/dress4.png') },
-    { id: '5', name: '21WN',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress5.png') },
+    { id: '5', name: '21WN',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress2.png') },
     { id: '6', name: 'Lopo',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress6.png') },
     { id: '7', name: '21VN',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress1.png') },
     { id: '8', name: 'Lame ',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress3.png') }
@@ -106,30 +106,36 @@
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 20,
-        paddingLeft: 30,
-        paddingRight: 30,
+        marginBottom: 27,
+        paddingLeft: 5,
+        paddingRight: 10,
     },
     menuIcon: {
-        width: 24,
-        height: 24,
+        width: 20,
+        height: 25,
         position: 'relative',
         alignItems: 'center',
+        left: 10,
     },
+
     logoText: {
         width: 100,
-        height: 40
+        height: 40,
     },
+
     searchIcon: {
         position: 'absolute',
-        right: 70,
+        right: 43,
+
     },
+
     shoppingBagIcon: {
         width: 24,
         height: 24,
         position: 'relative',
-        right: 0,
+        right: -1,
     },
+
     sectionTwo: {
         position: 'relative',
         flexDirection: 'row',
@@ -139,12 +145,15 @@
         paddingRight: 15,
         margin: 16,
     },
+
     sectionTwoText: {
-        fontSize: 24,
-        fontWeight: '400',
+        fontSize: 30,
+        fontWeight: 650,
         marginBottom: 10,
         position: 'relative',
+        color: 'black',
     },
+
     listContainer: {
         height: 40,
         width: 40,
@@ -157,6 +166,7 @@
         margin: 16,
         left: 80,
         bottom: 5,
+
     },
     filterContainer: {
         height: 40,

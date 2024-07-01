@@ -23,7 +23,7 @@
 
     return (
         <View style={styles.container}>
-        <Text style={styles.header}>Cart</Text>
+        <Text style={styles.header}>CART ITEMS RESTOCKING SOON</Text>
         <FlatList
             data={cart}
             keyExtractor={(item) => item.id}
@@ -40,8 +40,8 @@
 
     const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        padding: 16,
+        flex: 5,
+        padding: 6,
     },
     header: {
         fontSize: 24,
