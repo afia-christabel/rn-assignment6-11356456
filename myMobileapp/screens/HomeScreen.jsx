@@ -4,14 +4,14 @@
     import AsyncStorage from '@react-native-async-storage/async-storage';
 
     const products = [
-    { id: '1', name: 'Office Wear', description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress4.png') },
-    { id: '2', name: 'Black',  description: 'Reversible Angora Cardigan', price: 170, image: require('../assets/dress1.png') },
-    { id: '3', name: 'Church Wear',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress2.png') },
-    { id: '4', name: 'Lamerei',  description: 'Reversible Angora Cardigan ', price: 120, image: require('../assets/dress4.png') },
-    { id: '5', name: '21WN',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress2.png') },
-    { id: '6', name: 'Lopo',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress6.png') },
-    { id: '7', name: '21VN',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress1.png') },
-    { id: '8', name: 'Lame ',  description: 'Reversible Angora Cardigan', price: 120, image: require('../assets/dress3.png') }
+    { id: '1', name: 'Office Wear', description: 'reversible angora cardigan', price: 120, image: require('../assets/dress1.png') },
+    { id: '2', name: 'Black',  description: 'reversible angora cardigan', price: 120, image: require('../assets/dress2.png') },
+    { id: '3', name: 'Church Wear',  description: 'reversible angora cardigan', price: 120, image: require('../assets/dress3.png') },
+    { id: '4', name: 'Lamerei',  description: 'reversible angora cardigan ', price: 120, image: require('../assets/dress4.png') },
+    { id: '5', name: '21WN',  description: 'reversible angora cardigan', price: 120, image: require('../assets/dress5.png') },
+    { id: '6', name: 'Lopo',  description: 'reversible angora cardigan', price: 120, image: require('../assets/dress6.png') },
+    { id: '7', name: '21WN',  description: 'reversible angora cardigan', price: 120, image: require('../assets/dress7.png') },
+    { id: '8', name: 'lame ',  description: 'reversible angora cardigan', price: 120, image: require('../assets/dress3.png') }
     ];
 
     export default function HomeScreen({ navigation }) {
@@ -77,9 +77,9 @@
             </TouchableOpacity>
             </View>
             <View style={styles.sectionTwo}>
-            <Text style={styles.sectionTwoText}>O U R  S T O R Y</Text>
+            <Text style={styles.sectionTwoText}>O𝐮𝐫 S𝐭𝐨𝐫𝐲</Text>
             <View style={styles.listContainer}>
-                <Ionicons style={styles.listIcon} name="list" size={25} color="black" />
+                <Ionicons style={styles.list} name="list" size={25} color="black" />
             </View>
             <View style={styles.filterContainer}>
                 <Ionicons style={styles.filterIcon} name="filter" size={20} color="#FA908A" />
@@ -125,7 +125,7 @@
 
     searchIcon: {
         position: 'absolute',
-        right: 43,
+        right: 55,
 
     },
 
@@ -157,7 +157,6 @@
     listContainer: {
         height: 40,
         width: 40,
-        backgroundColor: '#F7F7F7',
         borderRadius: 100,
         position: 'relative',
         flexDirection: 'row',
@@ -183,7 +182,7 @@
     },
     listIcon: {
         position: 'relative',
-        left: 8,
+        left: 10,
     },
     filterIcon: {
         position: 'relative',
