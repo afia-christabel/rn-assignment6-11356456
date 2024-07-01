@@ -79,7 +79,7 @@
             <View style={styles.sectionTwo}>
             <Text style={styles.sectionTwoText}>O𝐮𝐫 S𝐭𝐨𝐫𝐲</Text>
             <View style={styles.listContainer}>
-                <Ionicons style={styles.list} name="list" size={25} color="black" />
+                <Image source={require("../assets/Listview.png")}/>
             </View>
             <View style={styles.filterContainer}>
                 <Ionicons style={styles.filterIcon} name="filter" size={20} color="#FA908A" />
@@ -155,16 +155,17 @@
     },
 
     listContainer: {
-        height: 40,
+        height: 42,
         width: 40,
         borderRadius: 100,
         position: 'relative',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
-        margin: 16,
+        margin: 25,
         left: 80,
         bottom: 5,
+        backgroundColor: '#F7F7F7',
 
     },
     filterContainer: {
