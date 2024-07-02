@@ -18,7 +18,7 @@ function App() {
         <Stack.Screen
           name="Cart"
           component={CartScreen}
-          options={{ title: 'Cart' }}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
