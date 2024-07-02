@@ -78,12 +78,12 @@
             </View>
             <View style={styles.sectionTwo}>
             <Text style={styles.sectionTwoText}>O𝐮𝐫 S𝐭𝐨𝐫𝐲</Text>
-            <View style={styles.listContainer}>
+            <TouchableOpacity style={styles.listContainer}>
                 <Image source={require("../assets/Listview.png")}/>
-            </View>
-            <View style={styles.filterContainer}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.filterContainer}>
                 <Ionicons style={styles.filterIcon} name="filter" size={20} color="#FA908A" />
-            </View>
+            </TouchableOpacity>
             </View>
             <FlatList
             data={products}

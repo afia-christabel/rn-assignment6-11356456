@@ -72,10 +72,10 @@ const CartScreen = () => {
             <Text style={{fontSize: 16, letterSpacing: 6}}>${cart.reduce((acc, curr) => acc + curr.amount, 0)}</Text>
         </View>
     </View>
-        <View onPress={() => alert('Checkout successful')} style={{backgroundColor: 'black', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 30, flexDirection: "row", padding: 20}}>
+        <TouchableOpacity onPress={() => alert('Checkout successful')} style={{backgroundColor: 'black', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 30, flexDirection: "row", padding: 20}}>
             <Image source={Shop}/>
             <Text style={{fontSize: 20, fontWeight: 'bold', color: '#fff',}}>CHECKOUT</Text>
-        </View>
+        </TouchableOpacity>
     </>
   );
 };
