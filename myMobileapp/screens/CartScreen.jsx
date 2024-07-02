@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Remove from '../assets/remove.png'
 import Logo from '../assets/Logo.png'
 import Search from '../assets/Search.png'
-import Shop from '../assets/shoppingBag.png'
+import Shop from '../assets/cart2.png'
 
 const CartScreen = () => {
   const [cart, setCart] = useState([]);
@@ -68,12 +68,12 @@ const CartScreen = () => {
         renderItem={renderItem}
       />
         <View style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row'}}>
-            <Text style={{fontSize: 16, letterSpacing: 5}}>EST. TOTAL: </Text>
-            <Text style={{fontSize: 16, letterSpacing: 6}}>${cart.reduce((acc, curr) => acc + curr.amount, 0)}</Text>
+            <Text style={{fontSize: 20, letterSpacing: 5}}>EST. TOTAL: </Text>
+            <Text style={{fontSize: 30, color: "red", letterSpacing: 6}}>$240</Text>
         </View>
     </View>
         <TouchableOpacity onPress={() => alert('Checkout successful')} style={{backgroundColor: 'black', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 30, flexDirection: "row", padding: 20}}>
-            <Image source={Shop}/>
+            <Image source={Shop} style={{width: 30, height: 30}}/>
             <Text style={{fontSize: 20, fontWeight: 'bold', color: '#fff',}}>CHECKOUT</Text>
         </TouchableOpacity>
     </>
