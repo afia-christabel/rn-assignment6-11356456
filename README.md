@@ -1,8 +1,9 @@
+## STUDENT ID: 11356456
+
+
 This is a mobile app i created with javascript and react native. 
 It shows some dresses you can add to cart and purchase. 
 You can also remove dresses you dont find interest in from cart using the cart button at the top right corner
-
-
 
 
 
